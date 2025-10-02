@@ -24,7 +24,7 @@ This is a full-featured REST API for a notepad application built with Java and S
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/https://github.com/Piyush12-kumar/Secure_Notepad_Application.git](https://github.com/Piyush12-kumar/Secure_Notepad_Application.git)
+    git clone https://github.com/Piyush12-kumar/Secure_Notepad_Application.git
     ```
 2.  **Navigate to the project directory:**
     ```bash
