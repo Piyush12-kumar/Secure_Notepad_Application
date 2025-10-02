@@ -1,26 +1,26 @@
-# Notepad Application API
+# 📝 Notepad Application API
 
 This is a full-featured REST API for a notepad application built with Java and Spring Boot.
 
-## Features
+## ✨ Features
 
-- User Authentication (Register, Login, Logout) with JWT
-- Secure Password Management (Password Reset, Change Password)
-- Full CRUD Operations for Notes
-- Note Sharing with Read-only/Read-write Permissions
-- Soft Deletes with a "Trash" and Restore feature
-- File Attachments for Notes
-- Tagging and Categorization for Notes
-- User Profile Management
+- 🔐 User Authentication (Register, Login, Logout) with JWT
+- 🔒 Secure Password Management (Password Reset, Change Password)
+- 📋 Full CRUD Operations for Notes
+- 🔄 Note Sharing with Read-only/Read-write Permissions
+- 🗑️ Soft Deletes with a "Trash" and Restore feature
+- 📎 File Attachments for Notes
+- 🏷️ Tagging and Categorization for Notes
+- 👤 User Profile Management
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **Backend:** Java, Spring Boot
 - **Security:** Spring Security, JWT
 - **Database:** Spring Data JPA, MySQL (or your database)
 - **Email:** Spring Mail
 
-## Setup and Installation
+## 🚀 Setup and Installation
 
 1.  **Clone the repository:**
     ```bash
@@ -39,20 +39,20 @@ This is a full-featured REST API for a notepad application built with Java and S
     mvn spring-boot:run
     ```
 
-## API Endpoints
+## 🔌 API Endpoints
 
-### Authentication
+### 🔑 Authentication
 - `POST /api/auth/register` — Register a new user
 - `POST /api/auth/login` — Login and receive JWT
 - `POST /api/auth/logout` — Logout user
 - `POST /api/auth/password/reset` — Request password reset
 - `POST /api/auth/password/change` — Change password
 
-### User Profile
+### 👤 User Profile
 - `GET /api/user/profile` — Get user profile
 - `PUT /api/user/profile` — Update user profile
 
-### Notes
+### 📝 Notes
 - `POST /api/notes/create` — Create a new note
 - `GET /api/notes/all` — Get all notes for the user
 - `GET /api/notes/{id}` — Get a specific note
@@ -61,10 +61,10 @@ This is a full-featured REST API for a notepad application built with Java and S
 - `POST /api/notes/restore/{id}` — Restore a note from Trash
 - `GET /api/notes/search` — Search notes by title or keyword
 
-### Note Sharing
+### 🔄 Note Sharing
 - `POST /api/notes/share/{noteId}` — Share a note with another user
 
-### Attachments
+### 📎 Attachments
 - `POST /api/notes/{id}/attachments` — Add attachment to a note
 - `GET /api/notes/{id}/attachments` — List attachments for a note
 - `DELETE /api/attachments/{attachmentId}` — Remove an attachment
@@ -76,3 +76,29 @@ This is a full-featured REST API for a notepad application built with Java and S
 - `GET /api/categories` — List all categories
 - `PUT /api/notes/{id}/tags` — Add or update tags for a note
 - `PUT /api/notes/{id}/categories` — Add or update categories for a note
+
+## 📊 Sample API Response
+
+```json
+{
+  "id": 1,
+  "title": "Meeting Notes",
+  "content": "Discussed project timeline and deliverables",
+  "createdAt": "2023-10-15T14:30:00",
+  "updatedAt": "2023-10-15T15:45:00",
+  "isDeleted": false,
+  "owner": {
+    "username": "john_doe"
+  }
+}
+```
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+<div align="center">
+  <p>Built with ❤️ by <a href="https://github.com/Piyush12-kumar">Piyush Kumar</a></p>
+</div>
