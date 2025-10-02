@@ -1,0 +1,74 @@
+# Default behavior: normalize line endings for all text files
+* text=auto
+
+# Java files
+*.java text diff=java
+*.kt text diff=kotlin
+
+# XML/HTML/Properties files
+*.xml text
+*.html text diff=html
+*.properties text
+
+# SQL files
+*.sql text
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Gradle/Maven files
+*.gradle text diff=groovy
+pom.xml text
+
+# Documentation
+*.md text diff=markdown
+*.txt text
+*.adoc text
+
+# Binary files (no line-ending conversion)
+*.jar binary
+*.war binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.7z binary
+*.bz2 binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dmg binary
+*.iso binary
+*.flv binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.wav binary
+*.m4a binary
+*.aac binary
+*.ogg binary
+*.opus binary
+*.webm binary
+*.flac binary
+*.mkv binary
+*.avi binary
+*.wmv binary
+*.bmp binary
+*.tiff binary
+*.svg binary
+*.psd binary
+*.ai binary
+*.eps binary
+*.indd binary
+*.zipx binary
+*.tar.gz binary
+*.tgz binary
+*.rar binary
+*.jar.binary
